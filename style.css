@@ -1,0 +1,56 @@
+/* 基本样式 */
+body {
+  /* 微软雅黑，如无则用Arial */
+  font-family: "Microsoft YaHei", Arial, sans-serif;
+  background-color: black;
+  color: white;
+  /* 文字居中 */
+  text-align: center;
+  /*  */
+  margin: 0;
+  padding: 20px;
+}
+
+/* 标题样式 */
+h1 {
+  font-size: 28px;
+  /* 下间距 */
+  margin-bottom: 20px;
+  /* 初始透明隐藏 */
+  opacity: 0;
+  visibility: hidden;
+  /* 过渡动画 */
+  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+}
+
+/* 文本段落样式 */
+#content p {
+  /* 初始透明隐藏 */
+  opacity: 0;
+  visibility: hidden;
+  /* 过渡动画 */
+  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+  /* 段落上下间距 */
+  margin: 10px 0;
+}
+
+/* 闪烁提示文字样式 */
+#click-to-continue {
+  /* 上间距 */
+  margin-top: 20px;
+  font-size: 16px;
+  /* 字体颜色！！ */
+  color: #007BFF;
+  /* 动画效果 */
+  animation: blink 1s infinite; /* 闪烁效果 */
+}
+
+/* 闪烁效果的关键帧动画 */
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
